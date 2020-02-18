@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="splitthecost2.myapplication.MainActivity">
+
+    <CheckBox
+        android:text="Mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSend"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="onCheckboxClicked (MainActivity)"
+        android:id="@+id/checkBox" />
+        android:id="@+id/checkBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/buttonSend"
+        android:onClick="sendMessage (MainActivity)" /><![CDATA[
+
+    android:id="@+id/checkBox2" />
+
+    ]]>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:id="@+id/Next"
+        android:layout_marginTop="77dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <CheckBox
+        android:text="Mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked (MainActivity)"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/buttonSend" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/editText"
+        android:text="Name"
+        android:layout_above="@+id/checkBox"
+        android:layout_alignStart="@+id/Next" />
+
+</RelativeLayout>
